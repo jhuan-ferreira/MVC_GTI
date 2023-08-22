@@ -1,0 +1,65 @@
+﻿@model MVC.ViewModels.ClienteViewModels
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Cliente
+            </div>
+            <div class="panel-body">
+                <div class="col-lg-12">
+                    <div class="col-lg-3">
+                        <input type="text" value="@Model.CPF" />
+                    </div>
+                    <div class="col-lg-9">
+                        @Html.EditorFor(model => model.Nome)
+                    </div>
+                    <div class="col-lg-3">
+                        @Html.EditorFor(model => model.RG)
+                    </div>
+                    <div class="col-lg-3">
+                        @Html.EditorFor(model => model.DataExpedicao)
+                    </div>
+                    <div class="col-lg-3">
+                        @Html.EditorFor(model => model.OrgaoExpedicao)
+                    </div>
+                    <div class="col-lg-3">
+                        @Html.EditorFor(model => model.UF)
+                    </div>
+                    <div class="col-lg-3">
+                        @Html.EditorFor(model => model.DataNascimento)
+                    </div>
+                    <div class="col-lg-3">
+                        <select class="form-control">
+                            <option value="Casado">Casado</option>
+                            <option value="Divorciado">Divorciado</option>
+                            <option value="Solteiro">Solteiro</option>
+                        </select>
+                        @*@Html.DropDownListFor(model => model.EstadoCivil, new SelectListItem[]{
+                                    new SelectListItem() {Text = "casado", Value = "casado", Selected = (Model.EstadoCivil == "casado") },
+                                    new SelectListItem() {Text = "divorciado", Value = "divorciado", Selected = (Model.EstadoCivil == "divorciado")},
+                                    new SelectListItem() {Text = "solteiro", Value = "solteiro", Selected = (Model.EstadoCivil == "solteiro" )}
+                                 }, "Selecione", new { @class = "form-control"})*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-primary ">
+            <div class="panel-heading">
+                Endereço
+            </div>
+            <div class="panel-body">
+                <div class="col-lg-12">
+                    <div class="col-lg-3">
+
+                        @*@Html.EditorFor(model => model.)*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
