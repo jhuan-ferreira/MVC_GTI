@@ -12,7 +12,7 @@ namespace MVC_GTI.Repository
     {
         public virtual Cliente GetById(int id)
         {
-
+            
             Cliente cliente = null;
 
             using (var ctx = new DbContext_GTI())
